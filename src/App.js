@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          React App with Travis-CI
+          React App with Travis-CI Dev Branch
         </p>
         <a
           className="App-link"

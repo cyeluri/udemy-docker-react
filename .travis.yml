@@ -1,4 +1,7 @@
 sudo: required
+branches:
+  only: 
+    - master
 services:
   - docker
 
@@ -7,6 +10,6 @@ services:
 
   script:
     - docker run   cyeluri/udemy/docker-react-travis-ci:v1.0.0 npm run test -- --coverage
-    
+
 
 

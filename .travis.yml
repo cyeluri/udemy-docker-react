@@ -7,7 +7,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t cyeluri/udemy/docker-react-travis-ci:v1.0.0 Dockerfile.dev .
+  - docker build -t cyeluri/udemy/docker-react-travis-ci:v1.0.0 -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true cyeluri/udemy/docker-react-travis-ci:v1.0.0 npm run test -- --coverage
